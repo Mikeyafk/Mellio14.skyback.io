@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Use the SkyTrack Progression Advisor to understand which areas of your Hypixel SkyBlock profile you should work on next.">
+
+    <title>Progression Advisor | SkyTrack</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="header-container">
+
+            <div class="logo">
+                <h1>SKYTRACK</h1>
+                <p>Player Progress & Statistics</p>
+            </div>
+
+            <div class="header-text">
+                <p>HYPIXEL SKYBLOCK</p>
+            </div>
+
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="advisor.html">Progression Advisor</a>
+            <a href="skills.html">Skills</a>
+            <a href="gear.html">Gear</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- INTRO -->
+
+        <section class="page-intro">
+
+            <p class="section-label">PROGRESSION ADVISOR</p>
+
+            <h2>What Should You Work On Next?</h2>
+
+            <p>
+                SkyTrack is designed to help players compare different
+                parts of their profile and find areas that may need
+                more progression.
+            </p>
+
+        </section>
+
+
+        <!-- PROFILE FORM -->
+
+        <section class="advisor-section">
+
+            <div class="section-heading">
+
+                <h2>Enter Your Profile</h2>
+
+                <p>
+                    Enter some basic information about your current
+                    SkyBlock profile.
+                </p>
+
+            </div>
+
+
+            <form action="#">
+
+                <label for="level">SkyBlock Level:</label>
+                <input type="number" id="level" name="level">
+
+                <label for="skill-average">Skill Average:</label>
+                <input type="number" id="skill-average"
+                    name="skill-average" step="0.1">
+
+                <label for="catacombs">Catacombs Level:</label>
+                <input type="number" id="catacombs"
+                    name="catacombs">
+
+                <label for="slayers">Slayer Levels:</label>
+                <input type="text" id="slayers"
+                    name="slayers"
+                    placeholder="Example: 7 / 7 / 7 / 5 / 5">
+
+                <label for="armor">Current Armor:</label>
+                <input type="text" id="armor"
+                    name="armor"
+                    placeholder="Example: Shadow Assassin">
+
+                <label for="weapon">Best Weapon:</label>
+                <input type="text" id="weapon"
+                    name="weapon"
+                    placeholder="Example: Yeti Sword">
+
+                <label for="pet">Main Pet:</label>
+                <input type="text" id="pet"
+                    name="pet"
+                    placeholder="Example: Baby Yeti">
+
+                <input type="submit" value="Check Progression">
+
+            </form>
+
+        </section>
+
+
+        <!-- PROGRESSION AREAS -->
+
+        <section class="advisor-info">
+
+            <div class="section-heading">
+
+                <h2>What SkyTrack Looks For</h2>
+
+                <p>
+                    SkyTrack focuses on four major areas of a player's
+                    profile when looking at progression.
+                </p>
+
+            </div>
+
+
+            <div class="advisor-grid">
+
+                <div class="advisor-card">
+
+                    <h3>Skills</h3>
+
+                    <p>
+                        Compare individual skill levels to identify
+                        skills that may be behind the rest of the
+                        profile.
+                    </p>
+
+                    <a href="skills.html">
+                        View Skill Guides
+                    </a>
+
+                </div>
+
+
+                <div class="advisor-card">
+
+                    <h3>Dungeons</h3>
+
+                    <p>
+                        Look at Catacombs level, Dungeon equipment,
+                        weapons, pets, and class progression.
+                    </p>
+
+                </div>
+
+
+                <div class="advisor-card">
+
+                    <h3>Slayers</h3>
+
+                    <p>
+                        Compare Slayer levels to find which Slayer
+                        bosses have the least progression.
+                    </p>
+
+                </div>
+
+
+                <div class="advisor-card">
+
+                    <h3>Gear</h3>
+
+                    <p>
+                        Compare armor, weapons, and pets with the
+                        other areas of the player's profile.
+                    </p>
+
+                    <a href="gear.html">
+                        View Gear Guide
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEVEL 0-250 -->
+
+        <section class="progression-range">
+
+            <div class="section-heading">
+
+                <h2>Level 0-250 Progression</h2>
+
+                <p>
+                    Players in this range have many different options
+                    for improving their profile.
+                </p>
+
+            </div>
+
+
+            <div class="progression-message">
+
+                <h3>Find Your Two Weakest Areas</h3>
+
+                <p>
+                    For players between SkyBlock Level 0 and 250,
+                    there is not always one specific activity that
+                    needs to be completed next.
+                </p>
+
+                <p>
+                    A useful approach is to compare Skills, Dungeons,
+                    Slayers, and Gear and focus on two areas that are
+                    behind the rest of the profile.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- DUNGEONS -->
+
+        <section class="recommendation-section">
+
+            <div class="section-heading">
+
+                <h2>If Dungeons Is Behind</h2>
+
+                <p>
+                    Dungeons can unlock stronger armor, weapons,
+                    and other progression opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="recommendation-content">
+
+                <div class="recommendation-main">
+
+                    <p class="example-label">RECOMMENDED FOCUS</p>
+
+                    <h3>Increase Your Catacombs Level</h3>
+
+                    <p>
+                        If Dungeons is one of your lowest areas,
+                        start by increasing your Catacombs level and
+                        unlocking more Dungeon floors.
+                    </p>
+
+                    <p>
+                        One possible progression path is getting a
+                        Floor 7 completion carry and then working
+                        toward a Necron armor set with a Golden Head
+                        for the floor you are running.
+                    </p>
+
+                </div>
+
+
+                <div class="goal-list">
+
+                    <h3>Long-Term Goals</h3>
+
+                    <ul>
+                        <li>Increase your Catacombs level</li>
+                        <li>Unlock Floor 7</li>
+                        <li>Work toward Necron armor</li>
+                        <li>Use the appropriate Golden Head</li>
+                        <li>Work toward an Astrea or Hyperion</li>
+                        <li>Work toward a Terminator</li>
+                        <li>Consider a Baby Yeti pet</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="tank-box">
+
+                <h3>Consider Playing Tank</h3>
+
+                <p>
+                    Tank can be a good class to begin investing in.
+                    It can be useful to a Dungeon party without
+                    requiring as expensive of a setup as some other
+                    classes. This can give players a way to gain
+                    Catacombs experience while continuing to improve
+                    their equipment.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section class="skills-recommendation">
+
+            <div class="section-heading">
+
+                <h2>If Skills Are Behind</h2>
+
+                <p>
+                    Compare your individual skill levels to find
+                    the two skills that need the most attention.
+                </p>
+
+            </div>
+
+
+            <div class="skill-input-example">
+
+                <div>
+
+                    <h3>Example Skill Levels</h3>
+
+                    <table>
+
+                        <tr>
+                            <th>Skill</th>
+                            <th>Level</th>
+                        </tr>
+
+                        <tr>
+                            <td>Mining</td>
+                            <td>40</td>
+                        </tr>
+
+                        <tr>
+                            <td>Farming</td>
+                            <td>35</td>
+                        </tr>
+
+                        <tr>
+                            <td>Combat</td>
+                            <td>42</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fishing</td>
+                            <td>25</td>
+                        </tr>
+
+                        <tr>
+                            <td>Foraging</td>
+                            <td>27</td>
+                        </tr>
+
+                        <tr>
+                            <td>Enchanting</td>
+                            <td>50</td>
+                        </tr>
+
+                        <tr>
+                            <td>Alchemy</td>
+                            <td>38</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+                <div class="example-result">
+
+                    <p class="example-label">EXAMPLE RESULT</p>
+
+                    <h3>Fishing & Foraging</h3>
+
+                    <p>
+                        In this example, Fishing and Foraging are the
+                        player's two lowest skills.
+                    </p>
+
+                    <p>
+                        These would be two areas the player could focus
+                        on improving to bring their skills closer together.
+                    </p>
+
+
+                    <div class="advisor-guide-links">
+
+                        <a href="skills.html#fishing">
+                            View Fishing Progression Guide
+                        </a>
+
+                        <a href="skills.html#foraging">
+                            View Foraging Progression Guide
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SLAYERS -->
+
+        <section class="slayer-recommendation">
+
+            <div class="section-heading">
+
+                <h2>If Slayers Are Behind</h2>
+
+                <p>
+                    Compare each Slayer level and identify the two
+                    with the least progression.
+                </p>
+
+            </div>
+
+
+            <div class="slayer-example">
+
+                <div>
+
+                    <h3>Example Slayer Levels</h3>
+
+                    <table>
+
+                        <tr>
+                            <th>Slayer</th>
+                            <th>Level</th>
+                        </tr>
+
+                        <tr>
+                            <td>Revenant Horror</td>
+                            <td>8</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tarantula Broodfather</td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sven Packmaster</td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr>
+                            <td>Voidgloom Seraph</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr>
+                            <td>Inferno Demonlord</td>
+                            <td>3</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+                <div class="example-result">
+
+                    <p class="example-label">EXAMPLE RESULT</p>
+
+                    <h3>Enderman & Blaze</h3>
+
+                    <p>
+                        In this example, Voidgloom Seraph and Inferno
+                        Demonlord have the lowest Slayer levels.
+                    </p>
+
+                    <p>
+                        The player could focus on Enderman and Blaze
+                        Slayer to bring these areas closer to the
+                        rest of their Slayer progression.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+
+                <h2>SKYTRACK</h2>
+
+                <p>Hypixel SkyBlock Progression Tracker</p>
+
+                <p>
+                    Contact:
+                    <a href="mailto:mellio14@asu.edu">
+                        mellio14@asu.edu
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="advisor.html">Advisor</a>
+                <a href="skills.html">Skills</a>
+                <a href="gear.html">Gear</a>
+                <a href="feedback.html">Feedback</a>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">&copy; 2026 SkyTrack</p>
+
+    </footer>
+
+</body>
+
+</html>

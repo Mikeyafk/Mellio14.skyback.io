@@ -144,7 +144,7 @@ nav a:hover {
 }
 
 
-/* HOW SKYTRACK WORKS */
+/* HOME - HOW IT WORKS */
 
 .how-it-works {
     background-color: #121016;
@@ -153,7 +153,7 @@ nav a:hover {
 
 .steps-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
@@ -185,7 +185,7 @@ nav a:hover {
 }
 
 
-/* OVERVIEW */
+/* HOME - OVERVIEW */
 
 .overview {
     padding: 65px 7%;
@@ -193,7 +193,7 @@ nav a:hover {
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 18px;
 }
 
@@ -219,7 +219,7 @@ nav a:hover {
 }
 
 
-/* PERSONALIZED PROGRESSION */
+/* EXAMPLE PROFILE */
 
 .recommendation-preview {
     background-color: #121016;
@@ -276,18 +276,8 @@ nav a:hover {
     margin-bottom: 18px;
 }
 
-.example-result a {
-    color: #8b5fbf;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-.example-result a:hover {
-    color: #d4af37;
-}
-
-
-/* PROGRESSION EXAMPLES */
+/* HOME - PROGRESSION */
 
 .game-stages {
     padding: 65px 7%;
@@ -295,7 +285,7 @@ nav a:hover {
 
 .stage-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 18px;
 }
 
@@ -375,26 +365,7 @@ nav a:hover {
 }
 
 
-/* STAGE INFORMATION */
-
-.stage-note {
-    background-color: #121016;
-    border-left: 4px solid #4b2366;
-    margin-top: 25px;
-    padding: 22px;
-}
-
-.stage-note h3 {
-    color: #d4af37;
-    margin-bottom: 5px;
-}
-
-.stage-note p {
-    color: #bcb6c2;
-}
-
-
-/* EXPLORE */
+/* HOME - EXPLORE */
 
 .explore {
     background-color: #121016;
@@ -403,7 +374,7 @@ nav a:hover {
 
 .explore-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
@@ -448,6 +419,531 @@ nav a:hover {
 
 .explore-card a:hover {
     color: #d4af37;
+}
+
+
+/* PAGE INTRO */
+
+.page-intro {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #121016;
+}
+
+.page-intro h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.page-intro p {
+    color: #c9c4cf;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ADVISOR FORM */
+
+.advisor-section {
+    padding: 65px 15%;
+}
+
+.advisor-section form {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-top: 3px solid #d4af37;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 15px;
+}
+
+.advisor-section label {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.advisor-section input {
+    padding: 10px;
+}
+
+.advisor-section input[type="submit"] {
+    grid-column: 2;
+    width: 180px;
+    background-color: #d4af37;
+    color: #0d0b12;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.advisor-section input[type="submit"]:hover {
+    background-color: #8b5fbf;
+}
+
+
+/* ADVISOR AREAS */
+
+.advisor-info {
+    background-color: #121016;
+    padding: 65px 10%;
+}
+
+.advisor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.advisor-card {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-top: 3px solid #4b2366;
+    padding: 30px;
+}
+
+.advisor-card h3 {
+    color: #d4af37;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.advisor-card p {
+    color: #bcb6c2;
+    margin-bottom: 15px;
+}
+
+.advisor-card a {
+    color: #8b5fbf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.advisor-card a:hover {
+    color: #d4af37;
+}
+
+
+/* LEVEL 0-250 */
+
+.progression-range {
+    padding: 65px 10%;
+}
+
+.progression-message {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-left: 4px solid #d4af37;
+    padding: 30px;
+}
+
+.progression-message h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.progression-message p {
+    color: #bcb6c2;
+    margin-bottom: 10px;
+}
+
+
+/* DUNGEON RECOMMENDATION */
+
+.recommendation-section {
+    background-color: #121016;
+    padding: 65px 10%;
+}
+
+.recommendation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.recommendation-main,
+.goal-list {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-top: 3px solid #4b2366;
+    padding: 30px;
+}
+
+.recommendation-main h3,
+.goal-list h3 {
+    color: #d4af37;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.recommendation-main p {
+    color: #bcb6c2;
+    margin-bottom: 12px;
+}
+
+.goal-list ul {
+    margin-left: 20px;
+    color: #bcb6c2;
+}
+
+.goal-list li {
+    margin-bottom: 8px;
+}
+
+.tank-box {
+    background-color: #211d27;
+    border-left: 4px solid #d4af37;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.tank-box h3 {
+    color: #d4af37;
+    margin-bottom: 8px;
+}
+
+.tank-box p {
+    color: #bcb6c2;
+}
+
+
+/* ADVISOR SKILLS */
+
+.skills-recommendation {
+    padding: 65px 10%;
+}
+
+.skill-input-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skill-input-example h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.skill-input-example table {
+    width: 100%;
+    border: 2px solid #4b2366;
+    border-collapse: collapse;
+}
+
+.skill-input-example th,
+.skill-input-example td {
+    padding: 10px;
+    border: 2px solid #4b2366;
+}
+
+.skill-input-example th {
+    background-color: #4b2366;
+}
+
+.skill-input-example td {
+    text-align: center;
+}
+
+
+/* ADVISOR GUIDE LINKS */
+
+.advisor-guide-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.advisor-guide-links a {
+    display: block;
+    background-color: #4b2366;
+    color: #f5f1e8;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.advisor-guide-links a:hover {
+    background-color: #d4af37;
+    color: #0d0b12;
+}
+
+
+/* ADVISOR SLAYERS */
+
+.slayer-recommendation {
+    background-color: #121016;
+    padding: 65px 10%;
+}
+
+.slayer-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.slayer-example h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.slayer-example table {
+    width: 100%;
+    border: 2px solid #4b2366;
+    border-collapse: collapse;
+}
+
+.slayer-example th,
+.slayer-example td {
+    padding: 10px;
+    border: 2px solid #4b2366;
+}
+
+.slayer-example th {
+    background-color: #4b2366;
+}
+
+.slayer-example td {
+    text-align: center;
+}
+
+
+/* SKILLS - GENERAL TIPS */
+
+.general-skill-tips {
+    padding: 65px 8%;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.tip-card {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-top: 3px solid #4b2366;
+    padding: 25px;
+}
+
+.tip-card h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    color: #bcb6c2;
+    margin-bottom: 12px;
+}
+
+.tip-card ul {
+    color: #bcb6c2;
+    margin-left: 20px;
+}
+
+.tip-card li {
+    margin-bottom: 5px;
+}
+
+
+/* SKILL NAVIGATION */
+
+.skill-navigation {
+    background-color: #121016;
+    padding: 55px 8%;
+}
+
+.skill-nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.skill-nav-grid a {
+    background-color: #1a1720;
+    border: 1px solid #4b2366;
+    color: #d4af37;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.skill-nav-grid a:hover {
+    background-color: #4b2366;
+    color: #f5f1e8;
+}
+
+
+/* FULL SKILL GUIDES */
+
+.skill-guide {
+    padding: 70px 7%;
+}
+
+.alternate-section {
+    background-color: #121016;
+}
+
+.skill-guide-heading {
+    max-width: 850px;
+    margin-bottom: 35px;
+}
+
+.skill-guide-heading h2 {
+    color: #d4af37;
+    font-size: 32px;
+    margin: 5px 0 8px;
+}
+
+.skill-guide-heading p {
+    color: #bcb6c2;
+}
+
+.progression-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.progression-card {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-top: 3px solid #4b2366;
+    padding: 28px;
+}
+
+.progression-card h3 {
+    color: #d4af37;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.progression-card h4 {
+    color: #8b5fbf;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+.progression-card p {
+    color: #bcb6c2;
+    margin-bottom: 12px;
+}
+
+.progression-card ul {
+    color: #c9c4cf;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.progression-card li {
+    margin-bottom: 5px;
+}
+
+.progression-level {
+    color: #8b5fbf;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.end-game-card {
+    border-top: 3px solid #d4af37;
+}
+
+.end-game-card .progression-level {
+    color: #d4af37;
+}
+
+
+/* EXTRA GUIDE */
+
+.extra-guide-box {
+    background-color: #211d27;
+    border-left: 4px solid #d4af37;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.extra-guide-box h3 {
+    color: #d4af37;
+    margin-bottom: 7px;
+}
+
+.extra-guide-box p {
+    color: #bcb6c2;
+}
+
+
+/* SIMPLE SKILLS */
+
+.simple-skill-guide {
+    padding: 70px 12%;
+}
+
+.simple-guide-card {
+    max-width: 900px;
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-top: 3px solid #4b2366;
+    padding: 32px;
+}
+
+.simple-guide-card h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.simple-guide-card h4 {
+    color: #8b5fbf;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+.simple-guide-card p {
+    color: #bcb6c2;
+    margin-bottom: 14px;
+}
+
+.simple-guide-card ul,
+.simple-guide-card ol {
+    color: #c9c4cf;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.simple-guide-card li {
+    margin-bottom: 6px;
+}
+
+
+/* VIDEO */
+
+.video-section {
+    background-color: #121016;
+    padding: 65px 15%;
+}
+
+.video-placeholder {
+    height: 300px;
+    background-color: #18151e;
+    border: 2px dashed #4b2366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-placeholder p {
+    color: #8b5fbf;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 
@@ -507,7 +1003,7 @@ footer a {
 @media (max-width: 1050px) {
 
     .stage-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -521,7 +1017,14 @@ footer a {
     .steps-grid,
     .explore-grid,
     .recommendation-box,
-    .stage-grid {
+    .stage-grid,
+    .advisor-grid,
+    .recommendation-content,
+    .skill-input-example,
+    .slayer-example,
+    .progression-grid,
+    .tips-grid,
+    .skill-nav-grid {
         grid-template-columns: 1fr;
     }
 
@@ -539,9 +1042,27 @@ footer a {
         margin: 8px 0;
     }
 
+    .advisor-section {
+        padding: 50px 7%;
+    }
+
+    .advisor-section form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advisor-section input[type="submit"] {
+        width: 100%;
+    }
+
     .example-profile {
         border-right: none;
         border-bottom: 1px solid #332b3e;
+    }
+
+    .skill-guide,
+    .simple-skill-guide {
+        padding: 50px 7%;
     }
 
     .footer-links {
@@ -549,7 +1070,9 @@ footer a {
         flex-direction: column;
     }
 
-    .hero h2 {
+    .hero h2,
+    .page-intro h2 {
         font-size: 32px;
     }
+
 }
