@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Use the SkyTrack Progression Advisor to understand which areas of your Hypixel SkyBlock profile you should work on next.">
+        content="Use the SkyTrack Progression Advisor to compare Hypixel SkyBlock skills, dungeons, slayers, and gear with example progression goals.">
 
     <title>Progression Advisor | SkyTrack</title>
 
@@ -45,7 +46,7 @@
 
     <main>
 
-        <!-- INTRO -->
+        <!-- PAGE INTRO -->
 
         <section class="page-intro">
 
@@ -54,9 +55,9 @@
             <h2>What Should You Work On Next?</h2>
 
             <p>
-                SkyTrack is designed to help players compare different
-                parts of their profile and find areas that may need
-                more progression.
+                SkyTrack helps players compare different areas of
+                their Hypixel SkyBlock profile and find progression
+                goals that may need more attention.
             </p>
 
         </section>
@@ -71,49 +72,102 @@
                 <h2>Enter Your Profile</h2>
 
                 <p>
-                    Enter some basic information about your current
-                    SkyBlock profile.
+                    Use this form to organize your current SkyBlock
+                    stats before comparing them with the example
+                    recommendations below.
                 </p>
 
             </div>
 
-
-            <form action="#">
+            <form action="#" method="get">
 
                 <label for="level">SkyBlock Level:</label>
-                <input type="number" id="level" name="level">
+
+                <input
+                    type="number"
+                    id="level"
+                    name="level"
+                    min="0"
+                    placeholder="Example: 150"
+                >
+
 
                 <label for="skill-average">Skill Average:</label>
-                <input type="number" id="skill-average"
-                    name="skill-average" step="0.1">
+
+                <input
+                    type="number"
+                    id="skill-average"
+                    name="skill-average"
+                    min="0"
+                    step="0.1"
+                    placeholder="Example: 35.5"
+                >
+
 
                 <label for="catacombs">Catacombs Level:</label>
-                <input type="number" id="catacombs"
-                    name="catacombs">
+
+                <input
+                    type="number"
+                    id="catacombs"
+                    name="catacombs"
+                    min="0"
+                    placeholder="Example: 25"
+                >
+
 
                 <label for="slayers">Slayer Levels:</label>
-                <input type="text" id="slayers"
+
+                <input
+                    type="text"
+                    id="slayers"
                     name="slayers"
-                    placeholder="Example: 7 / 7 / 7 / 5 / 5">
+                    placeholder="Example: 7 / 7 / 7 / 5 / 5"
+                >
+
 
                 <label for="armor">Current Armor:</label>
-                <input type="text" id="armor"
+
+                <input
+                    type="text"
+                    id="armor"
                     name="armor"
-                    placeholder="Example: Shadow Assassin">
+                    placeholder="Example: Shadow Assassin"
+                >
+
 
                 <label for="weapon">Best Weapon:</label>
-                <input type="text" id="weapon"
+
+                <input
+                    type="text"
+                    id="weapon"
                     name="weapon"
-                    placeholder="Example: Yeti Sword">
+                    placeholder="Example: Yeti Sword"
+                >
+
 
                 <label for="pet">Main Pet:</label>
-                <input type="text" id="pet"
-                    name="pet"
-                    placeholder="Example: Baby Yeti">
 
-                <input type="submit" value="Check Progression">
+                <input
+                    type="text"
+                    id="pet"
+                    name="pet"
+                    placeholder="Example: Baby Yeti"
+                >
+
+
+                <input
+                    type="submit"
+                    value="Review My Stats"
+                >
 
             </form>
+
+            <p class="form-note">
+                This is a demonstration form. It does not
+                automatically process your stats or generate
+                personalized recommendations. Use the guides
+                below to compare your progression.
+            </p>
 
         </section>
 
@@ -127,8 +181,8 @@
                 <h2>What SkyTrack Looks For</h2>
 
                 <p>
-                    SkyTrack focuses on four major areas of a player's
-                    profile when looking at progression.
+                    Four major areas can help you understand
+                    your overall SkyBlock progression.
                 </p>
 
             </div>
@@ -136,58 +190,77 @@
 
             <div class="advisor-grid">
 
+                <!-- SKILLS -->
+
                 <div class="advisor-card">
 
                     <h3>Skills</h3>
 
                     <p>
-                        Compare individual skill levels to identify
-                        skills that may be behind the rest of the
-                        profile.
+                        Compare your individual skill levels
+                        to identify skills that are behind
+                        the rest of your profile.
                     </p>
 
                     <a href="skills.html">
-                        View Skill Guides
+                        View Skill Guides &rarr;
                     </a>
 
                 </div>
 
+
+                <!-- DUNGEONS -->
 
                 <div class="advisor-card">
 
                     <h3>Dungeons</h3>
 
                     <p>
-                        Look at Catacombs level, Dungeon equipment,
-                        weapons, pets, and class progression.
+                        Look at your Catacombs level, Dungeon
+                        equipment, weapons, pets, and
+                        class progression.
                     </p>
+
+                    <a href="#dungeons">
+                        View Dungeon Recommendations &rarr;
+                    </a>
 
                 </div>
 
+
+                <!-- SLAYERS -->
 
                 <div class="advisor-card">
 
                     <h3>Slayers</h3>
 
                     <p>
-                        Compare Slayer levels to find which Slayer
-                        bosses have the least progression.
+                        Compare your Slayer levels to find
+                        which bosses have the least
+                        progression.
                     </p>
+
+                    <a href="#slayer-advice">
+                        View Slayer Recommendations &rarr;
+                    </a>
 
                 </div>
 
+
+                <!-- GEAR -->
 
                 <div class="advisor-card">
 
                     <h3>Gear</h3>
 
                     <p>
-                        Compare armor, weapons, and pets with the
-                        other areas of the player's profile.
+                        Compare your armor, weapons, and
+                        pets with the equipment recommended
+                        for different stages of the game.
                     </p>
 
                     <a href="gear.html">
-                        View Gear Guide
+                        View Gear Guide &rarr;
                     </a>
 
                 </div>
@@ -197,7 +270,7 @@
         </section>
 
 
-        <!-- LEVEL 0-250 -->
+        <!-- LEVEL 0-250 PROGRESSION -->
 
         <section class="progression-range">
 
@@ -206,8 +279,9 @@
                 <h2>Level 0-250 Progression</h2>
 
                 <p>
-                    Players in this range have many different options
-                    for improving their profile.
+                    Players in this level range have many
+                    different options for improving
+                    their profile.
                 </p>
 
             </div>
@@ -218,15 +292,26 @@
                 <h3>Find Your Two Weakest Areas</h3>
 
                 <p>
-                    For players between SkyBlock Level 0 and 250,
-                    there is not always one specific activity that
-                    needs to be completed next.
+                    For players between SkyBlock Level 0
+                    and 250, there is not always one
+                    specific activity that needs to
+                    be completed next.
                 </p>
 
                 <p>
-                    A useful approach is to compare Skills, Dungeons,
-                    Slayers, and Gear and focus on two areas that are
-                    behind the rest of the profile.
+                    A useful approach is to compare
+                    Skills, Dungeons, Slayers, and
+                    Gear and focus on two areas
+                    that are behind the rest of
+                    your profile.
+                </p>
+
+                <p>
+                    For example, a player with strong
+                    skills but a low Catacombs level
+                    might benefit more from Dungeons
+                    than continuing to grind
+                    their highest skills.
                 </p>
 
             </div>
@@ -236,15 +321,16 @@
 
         <!-- DUNGEONS -->
 
-        <section class="recommendation-section">
+        <section class="recommendation-section" id="dungeons">
 
             <div class="section-heading">
 
                 <h2>If Dungeons Is Behind</h2>
 
                 <p>
-                    Dungeons can unlock stronger armor, weapons,
-                    and other progression opportunities.
+                    Dungeons unlock stronger armor,
+                    weapons, and other progression
+                    opportunities.
                 </p>
 
             </div>
@@ -254,21 +340,34 @@
 
                 <div class="recommendation-main">
 
-                    <p class="example-label">RECOMMENDED FOCUS</p>
+                    <p class="example-label">
+                        RECOMMENDED FOCUS
+                    </p>
 
                     <h3>Increase Your Catacombs Level</h3>
 
                     <p>
-                        If Dungeons is one of your lowest areas,
-                        start by increasing your Catacombs level and
-                        unlocking more Dungeon floors.
+                        If Dungeons is one of your
+                        weakest areas, start by
+                        increasing your Catacombs
+                        level and unlocking
+                        additional Dungeon floors.
                     </p>
 
                     <p>
-                        One possible progression path is getting a
-                        Floor 7 completion carry and then working
-                        toward a Necron armor set with a Golden Head
-                        for the floor you are running.
+                        One possible progression
+                        path is obtaining a Floor 7
+                        completion, then working
+                        toward Necron Armor with
+                        a Golden Head for the
+                        floor you are running.
+                    </p>
+
+                    <p>
+                        As your Catacombs level
+                        increases, you can begin
+                        investing in stronger
+                        weapons and pets.
                     </p>
 
                 </div>
@@ -281,11 +380,11 @@
                     <ul>
                         <li>Increase your Catacombs level</li>
                         <li>Unlock Floor 7</li>
-                        <li>Work toward Necron armor</li>
+                        <li>Work toward Necron Armor</li>
                         <li>Use the appropriate Golden Head</li>
                         <li>Work toward an Astrea or Hyperion</li>
                         <li>Work toward a Terminator</li>
-                        <li>Consider a Baby Yeti pet</li>
+                        <li>Consider a Baby Yeti Pet</li>
                     </ul>
 
                 </div>
@@ -298,13 +397,24 @@
                 <h3>Consider Playing Tank</h3>
 
                 <p>
-                    Tank can be a good class to begin investing in.
-                    It can be useful to a Dungeon party without
-                    requiring as expensive of a setup as some other
-                    classes. This can give players a way to gain
-                    Catacombs experience while continuing to improve
+                    Tank can be a good class to
+                    begin investing in because
+                    it can provide value to a
+                    Dungeon party without
+                    requiring as expensive a
+                    setup as some other classes.
+                </p>
+
+                <p>
+                    This can give players a way
+                    to gain Catacombs experience
+                    while continuing to improve
                     their equipment.
                 </p>
+
+                <a href="gear.html#armor">
+                    Explore Armor Progression &rarr;
+                </a>
 
             </div>
 
@@ -313,15 +423,16 @@
 
         <!-- SKILLS -->
 
-        <section class="skills-recommendation">
+        <section class="skills-recommendation" id="skill-advice">
 
             <div class="section-heading">
 
                 <h2>If Skills Are Behind</h2>
 
                 <p>
-                    Compare your individual skill levels to find
-                    the two skills that need the most attention.
+                    Compare your individual skill
+                    levels to find the two skills
+                    that need the most attention.
                 </p>
 
             </div>
@@ -336,8 +447,8 @@
                     <table>
 
                         <tr>
-                            <th>Skill</th>
-                            <th>Level</th>
+                            <th scope="col">Skill</th>
+                            <th scope="col">Level</th>
                         </tr>
 
                         <tr>
@@ -382,18 +493,23 @@
 
                 <div class="example-result">
 
-                    <p class="example-label">EXAMPLE RESULT</p>
+                    <p class="example-label">
+                        EXAMPLE RESULT
+                    </p>
 
-                    <h3>Fishing & Foraging</h3>
+                    <h3>Fishing &amp; Foraging</h3>
 
                     <p>
-                        In this example, Fishing and Foraging are the
+                        In this example, Fishing
+                        and Foraging are the
                         player's two lowest skills.
                     </p>
 
                     <p>
-                        These would be two areas the player could focus
-                        on improving to bring their skills closer together.
+                        These would be two areas
+                        the player could focus on
+                        improving to bring their
+                        skills closer together.
                     </p>
 
 
@@ -418,15 +534,16 @@
 
         <!-- SLAYERS -->
 
-        <section class="slayer-recommendation">
+        <section class="slayer-recommendation" id="slayer-advice">
 
             <div class="section-heading">
 
                 <h2>If Slayers Are Behind</h2>
 
                 <p>
-                    Compare each Slayer level and identify the two
-                    with the least progression.
+                    Compare each Slayer level
+                    and identify the two with
+                    the least progression.
                 </p>
 
             </div>
@@ -441,8 +558,8 @@
                     <table>
 
                         <tr>
-                            <th>Slayer</th>
-                            <th>Level</th>
+                            <th scope="col">Slayer</th>
+                            <th scope="col">Level</th>
                         </tr>
 
                         <tr>
@@ -477,20 +594,102 @@
 
                 <div class="example-result">
 
-                    <p class="example-label">EXAMPLE RESULT</p>
+                    <p class="example-label">
+                        EXAMPLE RESULT
+                    </p>
 
-                    <h3>Enderman & Blaze</h3>
+                    <h3>Enderman &amp; Blaze</h3>
 
                     <p>
-                        In this example, Voidgloom Seraph and Inferno
-                        Demonlord have the lowest Slayer levels.
+                        In this example, Voidgloom
+                        Seraph and Inferno Demonlord
+                        have the lowest Slayer levels.
                     </p>
 
                     <p>
-                        The player could focus on Enderman and Blaze
-                        Slayer to bring these areas closer to the
-                        rest of their Slayer progression.
+                        The player could focus on
+                        Enderman and Blaze Slayer
+                        to bring these areas closer
+                        to the rest of their
+                        Slayer progression.
                     </p>
+
+                    <p>
+                        Slayer bosses become more
+                        difficult as you progress,
+                        so make sure your equipment
+                        is strong enough before
+                        attempting higher tiers.
+                    </p>
+
+                    <div class="advisor-guide-links">
+
+                        <a href="gear.html#weapons">
+                            View Weapon Progression
+                        </a>
+
+                        <a href="gear.html#pets">
+                            View Pet Progression
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEXT STEPS -->
+
+        <section class="advisor-info">
+
+            <div class="section-heading">
+
+                <h2>Continue Your Progression</h2>
+
+                <p>
+                    Use the guides below to learn
+                    more about improving your
+                    SkyBlock profile.
+                </p>
+
+            </div>
+
+
+            <div class="advisor-grid">
+
+                <div class="advisor-card">
+
+                    <h3>Skill Progression</h3>
+
+                    <p>
+                        Find equipment recommendations
+                        and training methods for
+                        nine different SkyBlock skills.
+                    </p>
+
+                    <a href="skills.html">
+                        Explore Skills &rarr;
+                    </a>
+
+                </div>
+
+
+                <div class="advisor-card">
+
+                    <h3>Gear Progression</h3>
+
+                    <p>
+                        Explore recommended weapons,
+                        armor, and pets for early,
+                        mid, late, and end game.
+                    </p>
+
+                    <a href="gear.html">
+                        Explore Gear &rarr;
+                    </a>
 
                 </div>
 

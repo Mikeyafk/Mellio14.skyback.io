@@ -4,11 +4,27 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0d0b12;
     color: #f5f1e8;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+}
+
+a {
+    color: #8b5fbf;
+}
+
+a:hover {
+    color: #d4af37;
+}
+
+section {
+    scroll-margin-top: 20px;
 }
 
 
@@ -23,6 +39,8 @@ header {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .logo h1 {
@@ -64,12 +82,7 @@ nav a:hover {
 }
 
 
-/* HERO */
-
-.hero {
-    text-align: center;
-    padding: 75px 10% 70px;
-}
+/* SHARED HEADINGS */
 
 .section-label {
     color: #d4af37;
@@ -77,6 +90,49 @@ nav a:hover {
     font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+
+.section-heading {
+    border-left: 4px solid #d4af37;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    color: #d4af37;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.section-heading p {
+    color: #aaa4b0;
+}
+
+.page-intro {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #121016;
+}
+
+.page-intro h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.page-intro p {
+    color: #c9c4cf;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* HOME HERO */
+
+.hero {
+    text-align: center;
+    padding: 75px 10% 70px;
 }
 
 .hero h2 {
@@ -104,17 +160,25 @@ nav a:hover {
 
 .main-button:hover {
     background-color: #8b5fbf;
+    color: #0d0b12;
 }
 
 .hero-image {
     max-width: 950px;
-    height: 320px;
+    min-height: 320px;
     margin: 0 auto;
-    border: 2px dashed #4b2366;
-    background-color: #17141c;
+    border: 2px solid #4b2366;
+    background-color: #21192b;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+}
+
+.hero-image h3 {
+    color: #d4af37;
+    font-size: 27px;
+    letter-spacing: 3px;
 }
 
 .hero-image p {
@@ -122,29 +186,11 @@ nav a:hover {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-top: 10px;
 }
 
 
-/* SECTION HEADINGS */
-
-.section-heading {
-    border-left: 4px solid #d4af37;
-    padding-left: 15px;
-    margin-bottom: 30px;
-}
-
-.section-heading h2 {
-    color: #d4af37;
-    font-size: 26px;
-    text-transform: uppercase;
-}
-
-.section-heading p {
-    color: #aaa4b0;
-}
-
-
-/* HOME - HOW IT WORKS */
+/* HOME HOW IT WORKS */
 
 .how-it-works {
     background-color: #121016;
@@ -153,7 +199,7 @@ nav a:hover {
 
 .steps-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -185,7 +231,7 @@ nav a:hover {
 }
 
 
-/* HOME - OVERVIEW */
+/* HOME OVERVIEW */
 
 .overview {
     padding: 65px 7%;
@@ -193,7 +239,7 @@ nav a:hover {
 
 .stats-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 }
 
@@ -219,7 +265,7 @@ nav a:hover {
 }
 
 
-/* EXAMPLE PROFILE */
+/* HOME RECOMMENDATION */
 
 .recommendation-preview {
     background-color: #121016;
@@ -276,8 +322,13 @@ nav a:hover {
     margin-bottom: 18px;
 }
 
+.example-result a {
+    font-weight: bold;
+    text-decoration: none;
+}
 
-/* HOME - PROGRESSION */
+
+/* HOME STAGES */
 
 .game-stages {
     padding: 65px 7%;
@@ -285,7 +336,7 @@ nav a:hover {
 
 .stage-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 18px;
 }
 
@@ -302,6 +353,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    gap: 10px;
 }
 
 .stage-number {
@@ -364,8 +416,24 @@ nav a:hover {
     color: #d4af37;
 }
 
+.stage-note {
+    background-color: #211d27;
+    border-left: 4px solid #d4af37;
+    padding: 25px;
+    margin-top: 25px;
+}
 
-/* HOME - EXPLORE */
+.stage-note h3 {
+    color: #d4af37;
+    margin-bottom: 8px;
+}
+
+.stage-note p {
+    color: #bcb6c2;
+}
+
+
+/* HOME EXPLORE */
 
 .explore {
     background-color: #121016;
@@ -374,7 +442,7 @@ nav a:hover {
 
 .explore-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -385,19 +453,21 @@ nav a:hover {
 }
 
 .image-placeholder {
-    height: 140px;
-    background-color: #21192b;
+    height: 175px;
+    background-color: #17131e;
     border: 1px solid #4b2366;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 18px;
+    overflow: hidden;
 }
 
-.image-placeholder span {
-    color: #8b5fbf;
-    text-transform: uppercase;
-    font-weight: bold;
+.image-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .explore-card h3 {
@@ -412,35 +482,8 @@ nav a:hover {
 }
 
 .explore-card a {
-    color: #8b5fbf;
     font-weight: bold;
     text-decoration: none;
-}
-
-.explore-card a:hover {
-    color: #d4af37;
-}
-
-
-/* PAGE INTRO */
-
-.page-intro {
-    text-align: center;
-    padding: 70px 10%;
-    background-color: #121016;
-}
-
-.page-intro h2 {
-    color: #d4af37;
-    font-size: 36px;
-    margin: 10px 0;
-}
-
-.page-intro p {
-    color: #c9c4cf;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -467,26 +510,35 @@ nav a:hover {
     font-weight: bold;
 }
 
-.advisor-section input {
+.advisor-section input,
+.advisor-section select {
     padding: 10px;
+    width: 100%;
+    min-width: 0;
 }
 
 .advisor-section input[type="submit"] {
     grid-column: 2;
-    width: 180px;
     background-color: #d4af37;
     color: #0d0b12;
     border: none;
     font-weight: bold;
-    padding: 12px;
+    cursor: pointer;
 }
 
 .advisor-section input[type="submit"]:hover {
     background-color: #8b5fbf;
 }
 
+.form-note {
+    max-width: 800px;
+    margin: 15px auto 0;
+    color: #aaa4b0;
+    font-size: 13px;
+}
 
-/* ADVISOR AREAS */
+
+/* ADVISOR INFORMATION */
 
 .advisor-info {
     background-color: #121016;
@@ -495,7 +547,7 @@ nav a:hover {
 
 .advisor-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -518,17 +570,12 @@ nav a:hover {
 }
 
 .advisor-card a {
-    color: #8b5fbf;
-    text-decoration: none;
     font-weight: bold;
-}
-
-.advisor-card a:hover {
-    color: #d4af37;
+    text-decoration: none;
 }
 
 
-/* LEVEL 0-250 */
+/* ADVISOR LEVEL RANGE */
 
 .progression-range {
     padding: 65px 10%;
@@ -553,7 +600,7 @@ nav a:hover {
 }
 
 
-/* DUNGEON RECOMMENDATION */
+/* ADVISOR DUNGEONS */
 
 .recommendation-section {
     background-color: #121016;
@@ -562,7 +609,7 @@ nav a:hover {
 
 .recommendation-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -609,48 +656,69 @@ nav a:hover {
 
 .tank-box p {
     color: #bcb6c2;
+    margin-bottom: 12px;
+}
+
+.tank-box a {
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
-/* ADVISOR SKILLS */
+/* ADVISOR SKILLS AND SLAYERS */
 
 .skills-recommendation {
     padding: 65px 10%;
 }
 
-.skill-input-example {
+.slayer-recommendation {
+    background-color: #121016;
+    padding: 65px 10%;
+}
+
+.skill-input-example,
+.slayer-example {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.skill-input-example h3 {
+.skill-input-example h3,
+.slayer-example h3 {
     color: #d4af37;
     margin-bottom: 15px;
 }
 
-.skill-input-example table {
+.skill-input-example table,
+.slayer-example table {
     width: 100%;
     border: 2px solid #4b2366;
     border-collapse: collapse;
 }
 
 .skill-input-example th,
-.skill-input-example td {
+.skill-input-example td,
+.slayer-example th,
+.slayer-example td {
     padding: 10px;
     border: 2px solid #4b2366;
 }
 
-.skill-input-example th {
+.skill-input-example th,
+.slayer-example th {
     background-color: #4b2366;
 }
 
-.skill-input-example td {
+.skill-input-example td,
+.slayer-example td {
     text-align: center;
 }
 
-
-/* ADVISOR GUIDE LINKS */
+.skill-input-example .example-result,
+.slayer-example .example-result {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+}
 
 .advisor-guide-links {
     display: flex;
@@ -674,54 +742,15 @@ nav a:hover {
 }
 
 
-/* ADVISOR SLAYERS */
-
-.slayer-recommendation {
-    background-color: #121016;
-    padding: 65px 10%;
-}
-
-.slayer-example {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.slayer-example h3 {
-    color: #d4af37;
-    margin-bottom: 15px;
-}
-
-.slayer-example table {
-    width: 100%;
-    border: 2px solid #4b2366;
-    border-collapse: collapse;
-}
-
-.slayer-example th,
-.slayer-example td {
-    padding: 10px;
-    border: 2px solid #4b2366;
-}
-
-.slayer-example th {
-    background-color: #4b2366;
-}
-
-.slayer-example td {
-    text-align: center;
-}
-
-
-/* SKILLS - GENERAL TIPS */
+/* SKILLS GENERAL TIPS */
 
 .general-skill-tips {
-    padding: 65px 8%;
+    padding: 65px 7%;
 }
 
 .tips-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -734,21 +763,17 @@ nav a:hover {
 
 .tip-card h3 {
     color: #d4af37;
-    margin-bottom: 10px;
-}
-
-.tip-card p {
-    color: #bcb6c2;
     margin-bottom: 12px;
 }
 
-.tip-card ul {
+.tip-card p,
+.tip-card li {
     color: #bcb6c2;
-    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
-.tip-card li {
-    margin-bottom: 5px;
+.tip-card ul {
+    margin-left: 20px;
 }
 
 
@@ -756,23 +781,24 @@ nav a:hover {
 
 .skill-navigation {
     background-color: #121016;
-    padding: 55px 8%;
+    padding: 65px 7%;
 }
 
 .skill-nav-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
 }
 
 .skill-nav-grid a {
+    display: block;
     background-color: #1a1720;
     border: 1px solid #4b2366;
+    padding: 15px;
+    text-align: center;
     color: #d4af37;
     text-decoration: none;
-    text-align: center;
     font-weight: bold;
-    padding: 15px;
 }
 
 .skill-nav-grid a:hover {
@@ -781,7 +807,7 @@ nav a:hover {
 }
 
 
-/* FULL SKILL GUIDES */
+/* SKILL GUIDES */
 
 .skill-guide {
     padding: 70px 7%;
@@ -806,9 +832,13 @@ nav a:hover {
     color: #bcb6c2;
 }
 
+.skill-guide-heading .section-label {
+    color: #d4af37;
+}
+
 .progression-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -819,10 +849,18 @@ nav a:hover {
     padding: 28px;
 }
 
+.progression-level {
+    color: #8b5fbf;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
 .progression-card h3 {
     color: #d4af37;
-    font-size: 21px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 12px;
 }
 
 .progression-card h4 {
@@ -831,159 +869,397 @@ nav a:hover {
     margin-bottom: 7px;
 }
 
-.progression-card p {
+.progression-card p,
+.progression-card li {
     color: #bcb6c2;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .progression-card ul {
-    color: #c9c4cf;
     margin-left: 20px;
-    margin-bottom: 12px;
-}
-
-.progression-card li {
-    margin-bottom: 5px;
-}
-
-.progression-level {
-    color: #8b5fbf;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 2px;
 }
 
 .end-game-card {
-    border-top: 3px solid #d4af37;
+    border-top-color: #d4af37;
 }
 
 .end-game-card .progression-level {
     color: #d4af37;
 }
 
+.simple-skill-guide,
+.extra-guide-box {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-left: 4px solid #d4af37;
+    padding: 30px;
+}
 
-/* EXTRA GUIDE */
+.simple-skill-guide h3,
+.extra-guide-box h3 {
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+.simple-skill-guide p,
+.extra-guide-box p {
+    color: #bcb6c2;
+    margin-bottom: 12px;
+}
 
 .extra-guide-box {
-    background-color: #211d27;
-    border-left: 4px solid #d4af37;
-    padding: 25px;
     margin-top: 25px;
 }
 
-.extra-guide-box h3 {
-    color: #d4af37;
-    margin-bottom: 7px;
+.extra-guide-box a {
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.extra-guide-box p {
+
+/* FARMING GAMEPLAY VIDEO */
+
+.video-section {
+    background-color: #121016;
+    padding: 65px 10%;
+}
+
+.video-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-top: 3px solid #d4af37;
+    padding: 20px;
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+}
+
+.video-caption {
+    color: #aaa4b0;
+    font-size: 13px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+
+/* GEAR OVERVIEW */
+
+.gear-overview {
+    padding: 65px 10%;
+}
+
+.gear-overview-box {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-left: 4px solid #d4af37;
+    padding: 30px;
+}
+
+.gear-overview-box h3 {
+    color: #d4af37;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.gear-overview-box p {
+    color: #bcb6c2;
+    margin-bottom: 15px;
+}
+
+.gear-guide-button {
+    display: inline-block;
+    background-color: #4b2366;
+    color: #f5f1e8;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin-top: 10px;
+}
+
+.gear-guide-button:hover {
+    background-color: #d4af37;
+    color: #0d0b12;
+}
+
+
+/* GEAR NAVIGATION */
+
+.gear-navigation {
+    background-color: #121016;
+    padding: 65px 10%;
+}
+
+.gear-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gear-nav-grid a {
+    display: block;
+    background-color: #1a1720;
+    border: 1px solid #4b2366;
+    border-top: 3px solid #4b2366;
+    padding: 25px;
+    text-decoration: none;
+}
+
+.gear-nav-grid a:hover {
+    background-color: #211d27;
+    border-top-color: #d4af37;
+}
+
+.gear-nav-grid h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.gear-nav-grid p {
+    color: #bcb6c2;
+    font-size: 14px;
+}
+
+
+/* GEAR PROGRESSION */
+
+.gear-section {
+    padding: 70px 7%;
+}
+
+.gear-alternate {
+    background-color: #121016;
+}
+
+.gear-section-heading {
+    max-width: 850px;
+    margin-bottom: 35px;
+}
+
+.gear-section-heading h2 {
+    color: #d4af37;
+    font-size: 32px;
+    margin: 5px 0 8px;
+}
+
+.gear-section-heading p {
     color: #bcb6c2;
 }
 
-
-/* SIMPLE SKILLS */
-
-.simple-skill-guide {
-    padding: 70px 12%;
+.gear-section-heading .section-label {
+    color: #d4af37;
 }
 
-.simple-guide-card {
-    max-width: 900px;
+.gear-progression-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gear-card {
     background-color: #1a1720;
     border: 1px solid #332b3e;
     border-top: 3px solid #4b2366;
-    padding: 32px;
+    padding: 28px;
 }
 
-.simple-guide-card h3 {
+.gear-stage {
+    color: #8b5fbf;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.gear-card h3 {
     color: #d4af37;
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
-.simple-guide-card h4 {
+.gear-card h4 {
     color: #8b5fbf;
     margin-top: 18px;
     margin-bottom: 7px;
 }
 
-.simple-guide-card p {
+.gear-card p,
+.gear-card li {
     color: #bcb6c2;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
-.simple-guide-card ul,
-.simple-guide-card ol {
-    color: #c9c4cf;
-    margin-left: 25px;
+.gear-card ul {
+    margin-left: 20px;
+}
+
+.gear-end-game {
+    border-top-color: #d4af37;
+}
+
+.gear-end-game .gear-stage {
+    color: #d4af37;
+}
+
+.gear-final-section {
+    background-color: #121016;
+    padding: 65px 10%;
+}
+
+.gear-final-box {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-left: 4px solid #d4af37;
+    padding: 30px;
+}
+
+.gear-final-box h3 {
+    color: #d4af37;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.gear-final-box p {
+    color: #bcb6c2;
     margin-bottom: 15px;
 }
 
-.simple-guide-card li {
-    margin-bottom: 6px;
-}
 
+/* FEEDBACK FORM */
 
-/* VIDEO */
-
-.video-section {
-    background-color: #121016;
+.feedback-section {
     padding: 65px 15%;
 }
 
-.video-placeholder {
-    height: 300px;
-    background-color: #18151e;
-    border: 2px dashed #4b2366;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.feedback-section form {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-top: 3px solid #d4af37;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 15px;
 }
 
-.video-placeholder p {
-    color: #8b5fbf;
+.feedback-section label {
+    color: #d4af37;
     font-weight: bold;
-    text-transform: uppercase;
+}
+
+.feedback-section input,
+.feedback-section select,
+.feedback-section textarea {
+    padding: 10px;
+    width: 100%;
+    min-width: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.feedback-section textarea {
+    resize: vertical;
+}
+
+.feedback-section input[type="submit"] {
+    grid-column: 2;
+    background-color: #d4af37;
+    color: #0d0b12;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.feedback-section input[type="submit"]:hover {
+    background-color: #8b5fbf;
+}
+
+.feedback-info {
+    background-color: #121016;
+    padding: 65px 10%;
+}
+
+.feedback-bottom {
+    background-color: #0d0b12;
+}
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feedback-card {
+    background-color: #1a1720;
+    border: 1px solid #332b3e;
+    border-top: 3px solid #4b2366;
+    padding: 30px;
+}
+
+.feedback-card h3 {
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+.feedback-card p {
+    color: #bcb6c2;
+    margin-bottom: 15px;
+}
+
+.feedback-card a {
+    font-weight: bold;
+    text-decoration: none;
+    overflow-wrap: anywhere;
 }
 
 
 /* FOOTER */
 
 footer {
-    background-color: #08070a;
-    border-top: 1px solid #332b3e;
+    background-color: #131118;
+    border-top: 1px solid #302a38;
     padding: 40px 7% 20px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
-footer h2 {
+.footer-container h2 {
     color: #d4af37;
+    font-size: 23px;
     letter-spacing: 2px;
 }
 
-footer p {
+.footer-container p {
     color: #aaa4b0;
+    font-size: 13px;
+    margin-top: 8px;
 }
 
-footer a {
-    color: #8b5fbf;
+.footer-container a {
     text-decoration: none;
 }
 
 .footer-links {
     display: flex;
-    gap: 18px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 15px;
 }
 
 .footer-links a {
     color: #f5f1e8;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 13px;
 }
 
 .footer-links a:hover {
@@ -991,10 +1267,10 @@ footer a {
 }
 
 .copyright {
-    border-top: 1px solid #28232e;
-    margin-top: 30px;
-    padding-top: 15px;
+    text-align: center;
+    color: #77717d;
     font-size: 12px;
+    margin-top: 35px;
 }
 
 
@@ -1003,9 +1279,25 @@ footer a {
 @media (max-width: 1050px) {
 
     .stage-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
+    .steps-grid,
+    .explore-grid,
+    .tips-grid,
+    .gear-nav-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin-left: 14px;
+        font-size: 12px;
+    }
+
+    .advisor-section,
+    .feedback-section {
+        padding: 55px 8%;
+    }
 }
 
 
@@ -1013,46 +1305,70 @@ footer a {
 
 @media (max-width: 800px) {
 
+    header {
+        padding: 20px 5%;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    nav {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 55px 6%;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero-image {
+        min-height: 220px;
+    }
+
+    .hero-image h3 {
+        font-size: 20px;
+    }
+
+    .page-intro {
+        padding: 55px 7%;
+    }
+
+    .page-intro h2 {
+        font-size: 28px;
+    }
+
     .stats-grid,
-    .steps-grid,
-    .explore-grid,
-    .recommendation-box,
     .stage-grid,
+    .recommendation-box,
     .advisor-grid,
     .recommendation-content,
     .skill-input-example,
     .slayer-example,
     .progression-grid,
-    .tips-grid,
-    .skill-nav-grid {
+    .gear-progression-grid,
+    .feedback-grid {
         grid-template-columns: 1fr;
     }
 
-    .header-container,
-    .footer-container {
-        flex-direction: column;
-    }
-
-    nav {
-        text-align: left;
-    }
-
-    nav a {
-        display: block;
-        margin: 8px 0;
-    }
-
-    .advisor-section {
-        padding: 50px 7%;
-    }
-
-    .advisor-section form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .advisor-section input[type="submit"] {
-        width: 100%;
+    .skill-nav-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .example-profile {
@@ -1060,19 +1376,47 @@ footer a {
         border-bottom: 1px solid #332b3e;
     }
 
+    .advisor-section form,
+    .feedback-section form {
+        grid-template-columns: 1fr;
+        padding: 22px;
+    }
+
+    .advisor-section input[type="submit"],
+    .feedback-section input[type="submit"] {
+        grid-column: 1;
+    }
+
+    .how-it-works,
+    .overview,
+    .recommendation-preview,
+    .game-stages,
+    .explore,
+    .advisor-section,
+    .advisor-info,
+    .progression-range,
+    .recommendation-section,
+    .skills-recommendation,
+    .slayer-recommendation,
+    .general-skill-tips,
+    .skill-navigation,
     .skill-guide,
-    .simple-skill-guide {
+    .video-section,
+    .gear-overview,
+    .gear-navigation,
+    .gear-section,
+    .gear-final-section,
+    .feedback-section,
+    .feedback-info {
         padding: 50px 7%;
     }
 
-    .footer-links {
-        margin-top: 20px;
+    .skill-guide-heading h2,
+    .gear-section-heading h2 {
+        font-size: 28px;
+    }
+
+    .footer-container {
         flex-direction: column;
     }
-
-    .hero h2,
-    .page-intro h2 {
-        font-size: 32px;
-    }
-
 }
